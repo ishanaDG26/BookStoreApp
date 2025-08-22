@@ -1,7 +1,7 @@
 export default {
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api': 'https://bookstoreapp-backendd.onrender.com',
     },
   },
 };
