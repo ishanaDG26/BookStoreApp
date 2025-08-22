@@ -22,7 +22,7 @@ const BookSuggestions = () => {
     setSuggestions([]);
 
     try {
-      const res = await API.get(`/api/books/suggestions`, {
+      const res = await API.get(`/books/suggestions`, {
         params: { age: Number(age),genre },
       });
 
