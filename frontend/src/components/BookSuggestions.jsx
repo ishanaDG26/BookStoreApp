@@ -22,8 +22,8 @@ const BookSuggestions = () => {
     setSuggestions([]);
 
     try {
-      const res = await axios.get(`/api/books/suggestions`, {
-        params: { age: Number(age), genre },
+      const res = await API.get(`/api/books/suggestions`, {
+        params: { age: Number(age),genre },
       });
 
 
