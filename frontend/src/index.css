@@ -1,0 +1,157 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #2c3e50;
+}
+
+button {
+  font-family: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fdfcfa;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  background-color: #f4f7f9;
+  border: 1px solid #aabac4;
+  border-radius: 8px;
+  padding: 0.625rem;
+  color: #2c3e50;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Container adapts on various screens */
+.container {
+  padding: 1.5rem;
+  background-color: rgba(246, 248, 251, 0);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.2);
+  backdrop-filter: blur(6px);
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+/* Card */
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.2);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.3);
+}
+
+/* Form elements */
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Primary button */
+.primary-btn {
+  background-color: #2c3e50;
+  color: #f4f7f9;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .primary-btn {
+    width: auto;
+  }
+}
+
+.primary-btn:hover {
+  background-color: #4a6075;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive text sizing (optional enhancement) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .primary-btn {
+    font-size: 0.95rem;
+  }
+}

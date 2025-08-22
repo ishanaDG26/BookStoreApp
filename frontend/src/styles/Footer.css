@@ -1,0 +1,14 @@
+.footer {
+  opacity: 45%;
+  padding: 20px 0;
+  text-align: center;
+  color: #222; 
+  backdrop-filter: none;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: transparent; /* no extra white block inside */
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #2C2C2C;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 16px rgba(220, 235, 243, 0.6);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(6px);
+  color: #2C2C2C;
+  position: relative;
+  width: 30%;
+  margin: 1.5%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(220, 235, 243, 0.6);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.book-card h3 {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #4B647B;
+}
+
+.book-card p {
+  font-size: 0.95rem;
+  margin: 8px 0;
+  color: #2C2C2C;
+}
+
+.book-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #4B647B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #D9B26F;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #D9B26F;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  font-weight: bold;
+}

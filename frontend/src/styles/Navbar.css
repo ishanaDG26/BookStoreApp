@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #4B647B, #D9B26F);
+  color: #FFFFFF;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(220, 235, 243, 0.6); /* Ice blue shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #FFFFFF;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links button {
+  background: #D9B26F; /* Antique Gold */
+  color: #2C2C2C;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(76, 96, 122, 0.3); /* Soft steel blue shadow */
+}
+
+.nav-links button:hover {
+  background: #4B647B; /* Steel blue */
+  color: #FFFFFF;
+}
+
+.cart {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  margin-right: 10px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+}
