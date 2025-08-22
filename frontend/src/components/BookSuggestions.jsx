@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import API from '../api/API';
+import API from '../utils/api';
 import '../styles/BookSuggestions.css';
 
 const BookSuggestions = () => {
